@@ -12,6 +12,8 @@
 		C0264E7E1F7C01B500FD1E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0264E7C1F7C01B500FD1E87 /* Main.storyboard */; };
 		C0264E801F7C01B500FD1E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0264E7F1F7C01B500FD1E87 /* Assets.xcassets */; };
 		C0264E831F7C01B500FD1E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0264E811F7C01B500FD1E87 /* LaunchScreen.storyboard */; };
+		C0264E8E1F7C03A000FD1E87 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0264E8D1F7C03A000FD1E87 /* CircleButton.swift */; };
+		C0264E911F7C15BF00FD1E87 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C0264E8F1F7C091700FD1E87 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C0264E7F1F7C01B500FD1E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0264E821F7C01B500FD1E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0264E841F7C01B500FD1E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0264E8D1F7C03A000FD1E87 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		C0264E8F1F7C091700FD1E87 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		C0264E771F7C01B500FD1E87 /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
+				C0264E901F7C091B00FD1E87 /* Resources */,
+				C0264E8C1F7C038100FD1E87 /* Controller */,
+				C0264E8B1F7C037D00FD1E87 /* View */,
+				C0264E8A1F7C037000FD1E87 /* Model */,
 				C0264E781F7C01B500FD1E87 /* AppDelegate.swift */,
-				C0264E7A1F7C01B500FD1E87 /* ViewController.swift */,
 				C0264E7C1F7C01B500FD1E87 /* Main.storyboard */,
 				C0264E7F1F7C01B500FD1E87 /* Assets.xcassets */,
 				C0264E811F7C01B500FD1E87 /* LaunchScreen.storyboard */,
 				C0264E841F7C01B500FD1E87 /* Info.plist */,
 			);
 			path = Scribe;
+			sourceTree = "<group>";
+		};
+		C0264E8A1F7C037000FD1E87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0264E8B1F7C037D00FD1E87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0264E8D1F7C03A000FD1E87 /* CircleButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0264E8C1F7C038100FD1E87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0264E7A1F7C01B500FD1E87 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0264E901F7C091B00FD1E87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0264E8F1F7C091700FD1E87 /* test.m4a */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0264E911F7C15BF00FD1E87 /* test.m4a in Resources */,
 				C0264E831F7C01B500FD1E87 /* LaunchScreen.storyboard in Resources */,
 				C0264E801F7C01B500FD1E87 /* Assets.xcassets in Resources */,
 				C0264E7E1F7C01B500FD1E87 /* Main.storyboard in Resources */,
@@ -135,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0264E8E1F7C03A000FD1E87 /* CircleButton.swift in Sources */,
 				C0264E7B1F7C01B500FD1E87 /* ViewController.swift in Sources */,
 				C0264E791F7C01B500FD1E87 /* AppDelegate.swift in Sources */,
 			);
@@ -274,7 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.essentialtech.Scribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -288,7 +328,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.essentialtech.Scribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

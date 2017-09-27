@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>The NSA needs permission to record you indefinitely. Please allow us. 🕵️👀🕵️</string>
 </dict>
 </plist>
